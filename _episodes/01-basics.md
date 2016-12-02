@@ -106,7 +106,7 @@ Create a file called **hello.py** with the following content in **testrepo/**
 
 ``` python
 from __future__ import print_function
-print("Hello World"")
+print("Hello World")
 ```
 
 Verify that it works
@@ -220,7 +220,7 @@ Edit the  file called **hello.py** to create the following
 ``` python
 from __future__ import print_function
 def say_hello():
-	print("Hello World"")
+	print("Hello World")
 ```
 
 Now, create a new file called **runner.py** 
@@ -301,7 +301,7 @@ that the one file tracked by git has changed.
 
 Keep in mind that version control is about telling the story of how your project came to be. Let's commit the changes in two separate steps.
 
-First, use **git add** to add the .gitignore file, check what happened with **git status** and commit the changes. The -m handle gives **git commit** a commit message without opening your text editor.
+First, use **git add** to add the .gitignore file, check what happened with **git status** ~~and commit the changes. The -m handle gives **git commit** a commit message without opening your text editor.~~
 
 ```
 $ git add .gitignore
@@ -324,8 +324,11 @@ Untracked files:
 	runner.py
 ```
 
-Notice how git tells you what changes it will make with the commit and gives you instructions on the things you might want to do.
-
+Notice how git tells you what changes it will make with the commit and gives you instructions on the things you might want to do.  With git you can bring the files to a new state or back to previous state.
+>
+> The flow of the example stalls with this figure. The figure is good, but requires explanation
+> Added a sentence, introducing the 'state', but I am not sure this i enough.
+>
 ### States of a file.
 
 In general files can have one of 4 states inside a git repository. *Image CC BY 3.0 from the Pro Git book.*
